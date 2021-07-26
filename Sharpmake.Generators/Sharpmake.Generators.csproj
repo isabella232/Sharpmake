@@ -87,6 +87,9 @@
     <Compile Include="Generic\MakeProject.cs" />
     <Compile Include="Generic\Makefile.Template.cs" />
     <Compile Include="Generic\Makefile.cs" />
+    <Compile Include="Generic\R4UE.cs" />
+    <Compile Include="Generic\R4UE.Template.cs" />
+    <Compile Include="Generic\R4UE.Util.cs" />
     <Compile Include="IFileGenerator.cs" />
     <Compile Include="IGenerationContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
