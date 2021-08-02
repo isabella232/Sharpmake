@@ -342,4 +342,13 @@ namespace SharpmakeGen.Samples
             SharpmakeMainFile = @"sharpmake\main.sharpmake.cs";
         }
     }
+	
+	[Generate]
+	public class RiderJsonProject : SampleProject
+	{
+		public RiderJsonProject()
+		{
+			Name = "RiderJson";
+		}
+	}	
 }
