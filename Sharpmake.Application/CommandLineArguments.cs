@@ -70,6 +70,7 @@ namespace Sharpmake.Application
             public bool GenerateDebugSolution = false;
             public bool GenerateDebugSolutionOnly = false;
             public string DebugSolutionStartArguments = string.Empty;
+            public bool GenerateRdJson = false;
 
             [CommandLine.Option("sources", @"sharpmake sources files: ex: /sources( ""project1.sharpmake"", ""..\..\project2.sharpmake"" )")]
             public void SetSources(params string[] files)
@@ -353,6 +354,12 @@ ex: /forcecleanup( ""tmp/sharpmakeautocleanupdb.bin"" ")]
                 Util.ExecuteFilesAutoCleanup();
 
                 Exit = true;
+            }
+
+            [CommandLine.Option("rdjson", @"Generate Rider project files")]
+            public void CommandLineGenerateRdJson()
+            {
+                GenerateRdJson = true;
             }
 
             public void Validate()
